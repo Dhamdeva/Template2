@@ -1,0 +1,82 @@
+.main-footer {
+  background-color: #ffffff;
+}
+.footer {
+  position: relative;
+  z-index: 1;
+}
+.footer-img {
+  opacity: 0.1;
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../asset/sample1/coin.png.png");
+}
+.logo img:nth-child(1) {
+  width: 100px;
+}
+.logo img:nth-child(3),
+.logo img:nth-child(4) {
+  width: 150px;
+}
+.icon i {
+  margin-right: 10px;
+  color: #8c8c8c;
+}
+.main-footer p,
+a {
+  color: #444444;
+  font-size: 13px;
+}
+@media screen and (max-width: 576px) {
+  .main-footer p,
+  a {
+    font-size: 12px;
+  }
+}
+.footer h5 {
+  /* height: 20px; */
+  margin: 15px 0px;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+}
+.option a {
+  text-decoration: none;
+  color: #444444;
+  margin-top: 8px;
+  width: 165px;
+  /* background-color: aqua; */
+}
+.option a:hover {
+  transform: scale(1.03);
+  /* transform: translateY(-3px); */
+  color: rgb(18, 95, 229);
+}
+.footer span {
+  height: 3px;
+  background-color: var(--hover-btn-color);
+  width: 60px;
+  border-radius: 50px;
+  /* margin-bottom: 10px; */
+}
+
+.social i {
+  color: #a1a1a1;
+  transition: all 0.5s;
+  font-size: 22px;
+  padding: 5px;
+  width: 30px;
+}
+.social i:hover {
+  color: var(--primary-color);
+  background-color: black;
+  /* padding: 5px; */
+
+  border-radius: 100px;
+}
+.last {
+  font-size: 11px !important;
+}

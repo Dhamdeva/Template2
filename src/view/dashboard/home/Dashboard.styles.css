@@ -1,0 +1,269 @@
+* {
+  font-family: sans-serif;
+}
+.main {
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+.mainpagehead {
+  margin-top: 75px;
+}
+.login .mainpagehead {
+  height: 90vh !important;
+}
+.carousel-item {
+  min-height: 300px;
+  max-height: 800px;
+}
+.about input,
+button {
+}
+.about .top1image {
+  background-color: var(--primary-color);
+}
+.about .two-slides {
+  padding: 40px 0px;
+}
+.about i,
+.about a.button {
+  display: none;
+}
+.value img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+.value h3 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.long {
+}
+.long img {
+}
+.contact {
+  background-color: var(--primary-color);
+  padding: 10px 0px;
+}
+.contact div {
+  padding: 10px;
+}
+.contact .button {
+  color: #ffffff !important;
+  background-color: rgb(0, 0, 0);
+  border-radius: 40px;
+  border: none;
+  padding: 15px;
+  letter-spacing: 2px;
+  font-size: 21px;
+  font-weight: 600;
+  transition: 0.5s all;
+}
+.contact .button:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color-black) !important;
+}
+.register {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.register div {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.register i {
+  color: var(--text-color-black);
+  background-color: var(--primary-color);
+  border-radius: 100px;
+  font-size: 20px;
+  padding-top: 15px;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+.register h6 {
+  color: var(--text-color-black);
+  font-weight: 600;
+  font-size: 18px;
+}
+.contact-address img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 22px;
+}
+.regional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.map img {
+  height: 500px;
+  object-fit: contain;
+}
+.retail img {
+  width: 80px;
+  margin: 15px;
+}
+.retail {
+  width: 500px;
+}
+@keyframes slide {
+  from {
+    transform: translate3d(500px, 0, 0);
+  }
+  to {
+    transform: translate3d(-450px, 0, 0);
+  }
+}
+.retail .testimonial {
+  animation: slide 20s linear infinite;
+  min-width: 280px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  border-radius: 12px;
+  margin: 10px;
+  padding: 20px;
+}
+.retail {
+  overflow: hidden;
+}
+.banking {
+  overflow: hidden;
+}
+.banking .testimonial img {
+  margin: 15px;
+  width: 200px;
+  animation: slide 20s linear infinite;
+  border-radius: 12px;
+}
+.input-div {
+  margin-top: 20px;
+  border-bottom: 1px solid #ffffff;
+}
+.input-div i {
+  font-size: 23px;
+  color: #ffffffd4;
+  width: 20px;
+  transition: all 1s;
+}
+.input-div:hover i {
+  color: black;
+}
+.input-field {
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: var(--button-color);
+  padding-left: 20px;
+}
+.input-field::placeholder {
+  transition: all 0.5s;
+  color: #fffffff2;
+  font-size: 17px;
+}
+.input-field:focus::placeholder {
+  transition: all 0.5s;
+  transform: translateY(-15px);
+  color: aliceblue;
+}
+.bar {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.bar::before,
+.bar::after {
+  content: "";
+  border-bottom: 2px solid var(--text-color-black);
+  width: 0px;
+  margin-top: 0px;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.bar::after {
+  right: 50%;
+}
+.bar::before {
+  left: 50%;
+}
+.input-field:focus ~ .bar::before,
+.input-field:focus ~ .bar::after {
+  width: 55%;
+}
+.form-body button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  color: var(--button-color);
+  border-radius: 50px !important;
+  background-color: var(--secondary-color);
+  letter-spacing: 3px;
+  font-size: 18px !important;
+  transition: all 0.5s !important;
+}
+.form-body button:hover {
+  transition: all 0.5s;
+  background-color: var(--text-color-black);
+  color: white;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.signup-body {
+  position: absolute;
+  z-index: 0;
+  min-height: 100vh;
+  width: 100%;
+  filter: blur(3px);
+  background-size: cover;
+  background-position: center top;
+  background-image: url("../../../asset/sample1/login-back.png");
+}
+.oo {
+  margin-top: 15px;
+  height: 72vh;
+  position: absolute;
+  background: #ffffff18;
+  box-shadow: 0 0px 13px 0 #000000ae;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 12px;
+  border: 1px solid #ffffff2e;
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+.form-content h2 {
+  letter-spacing: 3px;
+}
+.form-img img {
+  width: 300px;
+  transform: scalex(-1);
+  animation: form 1s infinite alternate;
+}
+@keyframes form {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .form-img {
+    width: 0% !important;
+  }
+}
